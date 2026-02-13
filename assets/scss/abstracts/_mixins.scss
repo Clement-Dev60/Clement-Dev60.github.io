@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+@mixin card {
+  border-radius: 16px;
+  border: 1px solid black;
+  background: $background;
+}
+
+@mixin lg {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+.card_profile {
+  @include card();
+}
+
+.card_todo {
+  @include card();
+}
