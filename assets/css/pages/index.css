@@ -1104,7 +1104,7 @@ footer hr {
   padding: 80px 40px 60px;
   background: var(--bg-color);
   transition: background 0.3s;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 90px;
 }
 
 .contact-section {
@@ -1327,10 +1327,11 @@ footer hr {
 
 .contact-link__label {
   font-family: var(--card-font-mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--card-text-dim);
+  -webkit-text-stroke: 0.5px white;
   margin: 0 0 4px;
 }
 
