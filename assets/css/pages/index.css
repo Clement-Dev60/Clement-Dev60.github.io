@@ -1546,6 +1546,9 @@ footer hr {
   .about-stat:last-child {
     border-radius: 0 0 12px 12px;
   }
+  .contact-title {
+    font-size: clamp(30px, 5vw, 56px);
+  }
 }
 .card_profile {
   border-radius: 16px;

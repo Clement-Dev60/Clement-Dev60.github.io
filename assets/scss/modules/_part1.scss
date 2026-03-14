@@ -1713,4 +1713,7 @@ footer {
 			border-radius: 0 0 12px 12px;
 		}
 	}
+	.contact-title {
+		font-size: clamp(30px, 5vw, 56px);
+	}
 }
