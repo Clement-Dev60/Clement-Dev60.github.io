@@ -1547,7 +1547,7 @@ footer hr {
     border-radius: 0 0 12px 12px;
   }
   .contact-title {
-    font-size: clamp(30px, 5vw, 56px);
+    font-size: clamp(24px, 5vw, 50px);
   }
 }
 .card_profile {
