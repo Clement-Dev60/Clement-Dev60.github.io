@@ -110,7 +110,10 @@ header {
 	display: flex;
 	gap: 30px;
 }
-
+nav {
+	display: flex;
+	align-items: center;
+}
 nav a {
 	margin-left: 30px;
 	text-decoration: none;
@@ -493,9 +496,10 @@ footer {
 // ---- Labels de section ----
 .about-label {
 	font-family: var(--card-font-mono);
-	font-size: 10px;
+	font-size: 14px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	-webkit-text-stroke: 0.5px white;
 	color: var(--card-text-dim);
 	margin-bottom: 10px;
 }
@@ -1284,10 +1288,11 @@ footer {
 // ---- Label de section ----
 .contact-label {
 	font-family: var(--card-font-mono);
-	font-size: 10px;
+	font-size: 14px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: var(--card-text-dim);
+	-webkit-text-stroke: 0.5px white;
 	margin-bottom: 20px;
 }
 
@@ -1661,8 +1666,8 @@ footer {
 	}
 
 	.card {
-		aspect-ratio: unset; 
-		min-height: 320px; 
+		aspect-ratio: unset;
+		min-height: 320px;
 	}
 
 	.card__desc {
@@ -1691,5 +1696,20 @@ footer {
 
 	.card__body {
 		transform: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.about-stats {
+		grid-template-columns: 1fr;
+	}
+
+	.about-stat {
+		&:first-child {
+			border-radius: 12px 12px 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 12px 12px;
+		}
 	}
 }
